@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:testapp/bloc/rooms/rooms_bloc.dart';
+
 import '../../bloc/hotel/hotel_bloc.dart';
 import '../../page/rooms.dart';
 
@@ -26,6 +27,7 @@ class HotelDetailsInfoWidget extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: GridView.builder(
+                            physics: const ScrollPhysics(),
                             shrinkWrap: true,
                             gridDelegate:
                                 const SliverGridDelegateWithFixedCrossAxisCount(

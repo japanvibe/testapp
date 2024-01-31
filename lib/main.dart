@@ -15,7 +15,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(
-            fontFamily: 'SF Pro Display', dividerColor: Colors.transparent),
+            colorScheme: const ColorScheme.light(),
+            fontFamily: 'SF Pro Display',
+            dividerColor: Colors.transparent),
         debugShowCheckedModeBanner: false,
         home: BlocProvider<HotelBloc>(
             create: (context) => HotelBloc(), child: const HotelPage()));
