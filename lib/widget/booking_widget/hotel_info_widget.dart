@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../bloc/booking/info/booking_bloc.dart';
+
+import '../../bloc/booking_bloc/info_bloc/booking_bloc.dart';
 
 class HotelWidget extends StatelessWidget {
   const HotelWidget({super.key});

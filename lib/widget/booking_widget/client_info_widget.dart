@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
-import 'package:testapp/bloc/booking/client/client_bloc.dart';
-import 'package:testapp/bloc/booking/client/fields.dart';
 
-import '../../bloc/booking/phone/phone_bloc.dart';
+import '../../bloc/booking_bloc/client_bloc/FieldType.dart';
+import '../../bloc/booking_bloc/client_bloc/client_bloc.dart';
+import '../../bloc/booking_bloc/phone_bloc/phone_bloc.dart';
 
 class ClientInfoWidget extends StatelessWidget {
   const ClientInfoWidget({super.key});

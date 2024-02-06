@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:testapp/bloc/rooms/rooms_bloc.dart';
+import 'package:testapp/screen/rooms_screen.dart';
 
-import '../../bloc/hotel/hotel_bloc.dart';
-import '../../page/rooms.dart';
+import '../../bloc/hotel_bloc/hotel_bloc.dart';
+import '../../bloc/rooms_bloc/rooms_bloc.dart';
 
 class HotelDetailsInfoWidget extends StatelessWidget {
   const HotelDetailsInfoWidget({super.key});
@@ -147,7 +147,7 @@ class HotelDetailsInfoWidget extends StatelessWidget {
                                   Navigator.of(context).push(MaterialPageRoute(
                                       builder: (context) => BlocProvider(
                                             create: (context) => RoomsBloc(),
-                                            child: RoomsPage(
+                                            child: RoomsScreen(
                                                 hotelName: state.hotel.name!),
                                           )));
                                 },

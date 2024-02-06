@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:testapp/page/payment.dart';
+import 'package:testapp/screen/payment_screen.dart';
 
-import '../../bloc/booking/client/client_bloc.dart';
-import '../../bloc/booking/info/booking_bloc.dart';
+import '../../bloc/booking_bloc/client_bloc/client_bloc.dart';
+import '../../bloc/booking_bloc/info_bloc/booking_bloc.dart';
 
 class PaymentWidget extends StatelessWidget {
   const PaymentWidget({super.key});
@@ -159,7 +159,7 @@ class PaymentWidget extends StatelessWidget {
                                     .clientData
                                     .allDataValid!) {
                               Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => const Payment()));
+                                  builder: (context) => const PaymentScreen()));
                               context
                                   .read<ClientBloc>()
                                   .add(RefreshValidatingEvent());

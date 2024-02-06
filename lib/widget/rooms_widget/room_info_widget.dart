@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:testapp/ui/slider.dart';
-import '../../bloc/booking/info/booking_bloc.dart';
-import '../../bloc/rooms/rooms_bloc.dart';
-import '../../page/booking.dart';
+import 'package:testapp/screen/booking_screen.dart';
+import 'package:testapp/widget/custom_slider.dart';
+
+import '../../bloc/booking_bloc/info_bloc/booking_bloc.dart';
+import '../../bloc/rooms_bloc/rooms_bloc.dart';
 
 class RoomInfoWidget extends StatelessWidget {
   final int index;
@@ -119,7 +120,7 @@ class RoomInfoWidget extends StatelessWidget {
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) => BlocProvider(
                                         create: (context) => BookingBloc(),
-                                        child: const BookingPage(),
+                                        child: const BookingScreen(),
                                       )));
                             },
                             child: const Text('Выбрать номер',

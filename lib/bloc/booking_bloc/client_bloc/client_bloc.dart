@@ -1,7 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:email_validator/email_validator.dart';
-import 'package:meta/meta.dart';
-import 'package:testapp/bloc/booking/client/fields.dart';
+import 'package:flutter/cupertino.dart';
+
+import 'FieldType.dart';
 
 part 'client_event.dart';
 part 'client_state.dart';

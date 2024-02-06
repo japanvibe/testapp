@@ -1,5 +1,5 @@
-import 'package:dio/dio.dart';
 import 'package:bloc/bloc.dart';
+import 'package:dio/dio.dart';
 import 'package:meta/meta.dart';
 
 import '../../api/api_retrofit.dart';

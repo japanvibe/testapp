@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:testapp/page/hotel.dart';
+import 'package:testapp/screen/hotel_screen.dart';
 
-import 'bloc/hotel/hotel_bloc.dart';
+import 'bloc/hotel_bloc/hotel_bloc.dart';
 
 void main() {
   runApp(const MainApp());
@@ -20,6 +20,6 @@ class MainApp extends StatelessWidget {
             dividerColor: Colors.transparent),
         debugShowCheckedModeBanner: false,
         home: BlocProvider<HotelBloc>(
-            create: (context) => HotelBloc(), child: const HotelPage()));
+            create: (context) => HotelBloc(), child: const HotelScreen()));
   }
 }

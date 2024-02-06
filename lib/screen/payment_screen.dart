@@ -2,11 +2,12 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:testapp/bloc/hotel/hotel_bloc.dart';
-import 'package:testapp/page/hotel.dart';
+import 'package:testapp/screen/hotel_screen.dart';
 
-class Payment extends StatelessWidget {
-  const Payment({super.key});
+import '../bloc/hotel_bloc/hotel_bloc.dart';
+
+class PaymentScreen extends StatelessWidget {
+  const PaymentScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +69,7 @@ class Payment extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => BlocProvider(
                                   create: (context) => HotelBloc(),
-                                  child: const HotelPage(),
+                                  child: const HotelScreen(),
                                 )),
                         (route) => false);
                   },

@@ -1,7 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:testapp/bloc/booking/client/client_bloc.dart';
-import 'package:testapp/bloc/booking/client/fields.dart';
+
+import '../client_bloc/FieldType.dart';
+import '../client_bloc/client_bloc.dart';
 
 part 'phone_event.dart';
 part 'phone_state.dart';

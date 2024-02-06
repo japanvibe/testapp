@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../bloc/booking/client/client_bloc.dart';
-import '../../bloc/booking/client/fields.dart';
+import '../../bloc/booking_bloc/client_bloc/FieldType.dart';
+import '../../bloc/booking_bloc/client_bloc/client_bloc.dart';
 
 class TouristInfoWidget extends StatelessWidget {
   const TouristInfoWidget({super.key});

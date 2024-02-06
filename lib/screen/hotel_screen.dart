@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:testapp/ui/hotel/basic.dart';
-import 'package:testapp/ui/slider.dart';
-import '../bloc/hotel/hotel_bloc.dart';
-import '../ui/hotel/details.dart';
+import 'package:testapp/widget/custom_slider.dart';
 
-class HotelPage extends StatelessWidget {
-  const HotelPage({super.key});
+import '../bloc/hotel_bloc/hotel_bloc.dart';
+import '../widget/hotel_widget/hote_basic_info_widget.dart';
+import '../widget/hotel_widget/hotel_details_info_widget.dart';
+
+class HotelScreen extends StatelessWidget {
+  const HotelScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

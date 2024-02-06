@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../bloc/rooms/rooms_bloc.dart';
-import '../ui/rooms/room.dart';
 
-class RoomsPage extends StatelessWidget {
+import '../bloc/rooms_bloc/rooms_bloc.dart';
+import '../widget/rooms_widget/room_info_widget.dart';
+
+class RoomsScreen extends StatelessWidget {
   final String hotelName;
-  const RoomsPage({super.key, required this.hotelName});
+  const RoomsScreen({super.key, required this.hotelName});
 
   @override
   Widget build(BuildContext context) {
